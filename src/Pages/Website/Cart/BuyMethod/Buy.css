@@ -1,0 +1,489 @@
+/* Main Buy */
+.buy .buyitems {
+  width: 840px;
+  height: fit-content;
+  padding: 0px 0px 24px 0px;
+  border-radius: 16px;
+  border: 1px solid vaR(--border-color);
+}
+.buy .buyitems .header {
+  width: 100%;
+  height: 80px;
+  padding: 12px 40px;
+  gap: 10px;
+  border-radius: 16px 16px 0px 0px;
+  border-bottom: 1px solid var(--border-color);
+}
+.buy .buyitems .header h3 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  text-align: left;
+  margin-top: 10px;
+}
+.buy .buyitems .buybody {
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+/* Address */
+.buy .buybody .address {
+  margin: 0 auto;
+  width: 770px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.buy .buybody .address .addlink {
+  width: 770px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.buy .buybody .address .addlink h3 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32px;
+  text-align: left;
+  color: var(--seconde-color);
+}
+.buy .buybody .address .addlink .link {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 32px;
+  text-decoration: underline !important;
+  color: var(--main-color);
+}
+.buy .buybody .address .mansoura,
+.cairo {
+  width: 770px;
+  height: 104px;
+  padding: 16px 24px 16px 24px;
+  border-radius: 16px;
+  border: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between !important;
+  margin-bottom: 16px;
+}
+
+.buy .buybody .address input {
+  width: 20px;
+  accent-color: var(--main-color);
+}
+
+.buy .buybody .address .title .text .location {
+  width: 48px;
+  height: 48px;
+  padding: 12px;
+  border-radius: 50%;
+  background-color: #f9f9f9;
+  text-align: center;
+  color: var(--location-color);
+  font-size: 20px;
+}
+
+.buy .address .title .text .titles h3 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+  text-align: left;
+  color: var(--seconde-color);
+}
+.buy .address .title .text .titles p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+  color: var(--location-color);
+}
+/****************************************/
+/* Payment */
+.buy .buybody .payment {
+  margin: 0 auto;
+  width: 770px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+}
+.buy .buybody .payment .addlink {
+  width: 770px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.buy .buybody .payment .addlink h3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 32px;
+  text-align: left;
+  color: var(--seconde-color);
+}
+.buy .buybody .payment .addlink .link {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 32px;
+  text-decoration: underline !important;
+  color: var(--main-color);
+}
+.buy .buybody .payment .methods .delivery span {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+  color: var(--seconde-color);
+  text-align: left;
+}
+.buy .buybody .payment .methods .delivery,
+.visa,
+.paypal {
+  width: 770px;
+  height: 64px;
+  padding: 16px 24px 16px 24px;
+  border-radius: 16px;
+  border: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.buy .buybody .payment input {
+  width: 20px;
+  accent-color: var(--main-color);
+}
+/*************************************************************/
+/* Media Query */
+
+/* Large */
+@media (max-width: 1316px) and (min-width: 1250px) {
+  .buy .buyitems {
+    width: 712px;
+  }
+  .buy .buybody .address .addlink {
+    width: 620px;
+    margin-right: 70px;
+  }
+  .buy .buybody .address .mansoura,
+  .cairo {
+    width: 620px;
+    margin-right: 70px;
+  }
+  .buy .buybody .payment .addlink {
+    width: 620px;
+    margin-right: 70px;
+  }
+
+  .buy .buybody .payment .methods .delivery,
+  .visa,
+  .paypal {
+    width: 620px;
+    margin-right: 70px;
+  }
+}
+
+@media (max-width: 1250px) and (min-width: 992px) {
+  .buy .buyitems {
+    width: 100%;
+  }
+  .buy .buybody .address .addlink {
+    width: 100%;
+  }
+  .buy .buybody .address .mansoura,
+  .cairo {
+    width: 770px;
+  }
+  .buy .buybody .payment .addlink {
+    width: 100%;
+  }
+
+  .buy .buybody .payment .methods .delivery,
+  .visa,
+  .paypal {
+    width: 770px;
+  }
+}
+
+@media (max-width: 992px) {
+  .buy .buyitems {
+    width: 100%;
+  }
+
+  .buy .buybody .address,
+  .buy .buybody .payment {
+    width: 415px;
+  }
+  .buy .buybody .address .addlink {
+    width: 590px;
+  }
+  .buy .buybody .address .mansoura,
+  .cairo {
+    width: 620px;
+  }
+  .buy .buybody .payment .addlink {
+    width: 590px;
+  }
+
+  .buy .buybody .payment .methods .delivery,
+  .visa,
+  .paypal {
+    width: 620px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container,
+  .container-sm {
+    max-width: 600px;
+  }
+  .buy .buybody .address,
+  .buy .buybody .payment {
+    width: 415px;
+  }
+  .buy .buybody .address .addlink {
+    width: 520px;
+  }
+  .buy .buybody .address .mansoura,
+  .cairo {
+    width: 515px;
+  }
+  .buy .buybody .payment .addlink {
+    width: 520px;
+  }
+
+  .buy .buybody .payment .methods .delivery,
+  .visa,
+  .paypal {
+    width: 515px;
+  }
+  .buy .buybody .address .addlink h3,
+  .buy .buybody .payment .addlink h3 {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+  .buy .buybody .address .addlink .link,
+  .buy .buybody .payment .addlink .link {
+    font-size: 14px;
+  }
+
+  .buy .address .title .text .titles h3 {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+  .buy .address .title .text .titles p {
+    font-size: 12px;
+  }
+  .buy .buybody .address input,
+  .buy .buybody .payment input {
+    width: 15px;
+  }
+  .buy .buybody .payment .methods .delivery span {
+    font-size: 14px;
+  }
+}
+@media (max-width: 635px) {
+  .buy .buybody .address,
+  .buy .buybody .payment {
+    width: 415px;
+  }
+  .buy .buybody .address .addlink {
+    width: 515px;
+  }
+  .buy .buybody .address .mansoura,
+  .cairo {
+    width: 510px;
+  }
+  .buy .buybody .payment .addlink {
+    width: 515px;
+  }
+
+  .buy .buybody .payment .methods .delivery,
+  .visa,
+  .paypal {
+    width: 510px;
+  }
+}
+
+@media (max-width: 565px) {
+  .buy .buybody .address .addlink {
+    width: 465px;
+  }
+  .buy .buybody .address .mansoura,
+  .cairo {
+    width: 455px;
+  }
+  .buy .buybody .payment .addlink {
+    width: 465px;
+  }
+
+  .buy .buybody .payment .methods .delivery,
+  .visa,
+  .paypal {
+    width: 455px;
+  }
+}
+@media (max-width: 500px) {
+  .buy .buybody .address .addlink {
+    width: 420px;
+  }
+  .buy .buybody .address .mansoura,
+  .cairo {
+    width: 400px;
+  }
+  .buy .buybody .payment .addlink {
+    width: 420px;
+  }
+
+  .buy .buybody .payment .methods .delivery,
+  .visa,
+  .paypal {
+    width: 400px;
+  }
+}
+@media (max-width: 470px) {
+  .buy .buybody .address,
+  .buy .buybody .payment {
+    width: 315px;
+  }
+  .buy .buybody .address .addlink {
+    width: 355px;
+  }
+  .buy .buybody .address .mansoura,
+  .cairo {
+    width: 370px;
+  }
+  .buy .buybody .payment .addlink {
+    width: 355px;
+  }
+
+  .buy .buybody .payment .methods .delivery,
+  .visa,
+  .paypal {
+    width: 370px;
+  }
+  .buy .buybody .address .addlink h3,
+  .buy .buybody .payment .addlink h3 {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  .buy .buybody .address .addlink .link,
+  .buy .buybody .payment .addlink .link {
+    font-size: 14px;
+  }
+  .buy .address .title .text .titles,
+  .buy .payment .title .text .titles {
+    margin-top: 16px;
+  }
+  .buy .address .title .text .titles p {
+    font-size: 10px;
+  }
+  .buy .buybody .address input,
+  .buy .buybody .payment input {
+    width: 15px;
+  }
+  .buy .buybody .payment .methods .delivery span {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 400px) {
+  .buy .buybody .address,
+  .buy .buybody .payment {
+    width: 300px;
+  }
+  .buy .buybody .address .addlink {
+    width: 325px;
+  }
+  .buy .buybody .address .mansoura,
+  .cairo {
+    width: 315px;
+  }
+  .buy .buybody .payment .addlink {
+    width: 325px;
+  }
+  .buy .address .title .text .titles h3 {
+    font-size: 14px;
+  }
+
+  .buy .buybody .payment .methods .delivery,
+  .visa,
+  .paypal {
+    width: 315px;
+  }
+  .buy .buybody .address .addlink h3,
+  .buy .buybody .payment .addlink h3 {
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+  .buy .buybody .address .addlink .link,
+  .buy .buybody .payment .addlink .link {
+    font-size: 12px;
+  }
+  .buy .address .title .text .titles,
+  .buy .payment .title .text .titles {
+    margin-top: 16px;
+  }
+  .buy .address .title .text .titles p {
+    font-size: 10px;
+  }
+  .buy .buybody .address input,
+  .buy .buybody .payment input {
+    width: 15px;
+  }
+  .buy .buybody .payment .methods .delivery span {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 370px) {
+  .buy .buybody .address,
+  .buy .buybody .payment {
+    width: 300px;
+  }
+  .buy .buybody .address .addlink {
+    width: 290px;
+    margin-right: 14px;
+  }
+  .buy .buybody .address .mansoura,
+  .cairo {
+    width: 295px;
+    margin-right: 14px;
+  }
+  .buy .buybody .payment .addlink {
+    width: 290px;
+    margin-right: 14px;
+  }
+  .buy .address .title .text .titles h3 {
+    font-size: 12px;
+  }
+
+  .buy .buybody .payment .methods .delivery,
+  .visa,
+  .paypal {
+    width: 295px;
+    margin-right: 14px;
+  }
+  .buy .buybody .address .addlink h3,
+  .buy .buybody .payment .addlink h3 {
+    font-size: 11px;
+    margin-bottom: 0;
+  }
+  .buy .buybody .address .addlink .link,
+  .buy .buybody .payment .addlink .link {
+    font-size: 11px;
+  }
+  .buy .address .title .text .titles,
+  .buy .payment .title .text .titles {
+    margin-top: 16px;
+  }
+  .buy .address .title .text .titles p {
+    font-size: 9px;
+  }
+  .buy .buybody .address input,
+  .buy .buybody .payment input {
+    width: 12px;
+  }
+  .buy .buybody .payment .methods .delivery span {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,58 @@
+/* Active_Link */
+.shiffle .links .link.active {
+  font-weight: 700;
+  line-height: 48px;
+
+  color: var(--main-color);
+}
+.shiffle .links .link.active::after {
+  width: 100%;
+}
+/* Heading */
+.shop .shop-title {
+  width: 491px;
+  height: 107px;
+  margin: 0 auto;
+}
+.shop .shop-title h1 {
+  position: relative;
+  font-family: Livvic;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 67px;
+  text-align: center;
+  color: var(--main-color);
+}
+.shop .shop-title h1 span {
+  color: var(--second-main);
+}
+.shop .shop-title h1 img {
+  position: absolute;
+  right: 10px;
+  top: -7px;
+}
+/************************************************************************/
+
+/* Media Query */
+
+@media (max-width: 635px) and (min-width: 516px) {
+  .shop .shop-title h1 {
+    font-size: 35px;
+  }
+  .shop .shop-title h1 img {
+    right: 70px;
+    top: -4px;
+  }
+}
+@media (max-width: 516px) {
+  .shop .shop-title {
+    width: 325px;
+  }
+  .shop .shop-title h1 {
+    font-size: 35px;
+  }
+  .shop .shop-title h1 img {
+    right: -14px;
+    top: -4px;
+  }
+}

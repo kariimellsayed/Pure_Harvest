@@ -1,0 +1,93 @@
+.about {
+  background: url("../../../Css/Assets/Images/About/aboutus.jpg") center / cover
+    no-repeat;
+  min-height: 100vh;
+  position: relative;
+  z-index: 100;
+}
+.about::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.about .about-info {
+  position: relative;
+  width: 100%;
+}
+
+.about .about-info h1 {
+  font-family: Livvic;
+  font-size: 60px;
+  color: white;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+.about .about-info p {
+  font-size: 22px;
+  color: var(--text-color);
+  line-height: 1.8;
+  width: 70%;
+  word-spacing: 5px;
+}
+.about .about-info img {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(66deg) brightness(109%)
+    contrast(101%);
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin-bottom: 40px;
+}
+/************************************************************/
+/* Media Query */
+@media (max-width: 1316px) and (min-width: 1250px) {
+  .about .about-info::after {
+    bottom: -70px;
+  }
+  .about .about-info span {
+    bottom: -109px;
+  }
+}
+@media (max-width: 1251px) {
+  .about .about-info h1 {
+    font-size: 50px;
+    /* margin-bottom: 30px; */
+  }
+  .about .about-info img {
+    width: 70px;
+    height: 70px;
+    /* margin-bottom: 30px; */
+  }
+  .about .about-info p {
+    font-size: 18px;
+  }
+  .about .about-info::after {
+    bottom: -110px;
+  }
+  .about .about-info span {
+    bottom: -150px;
+  }
+}
+@media (max-width: 768px) {
+  .about .about-info h1 {
+    font-size: 40px;
+  }
+  .about .about-info img {
+    width: 60px;
+    height: 60px;
+  }
+  .about .about-info p {
+    font-size: 16px;
+    width: 100%;
+  }
+  .about .about-info::after {
+    bottom: -140px;
+  }
+  .about .about-info span {
+    bottom: -180px;
+  }
+}

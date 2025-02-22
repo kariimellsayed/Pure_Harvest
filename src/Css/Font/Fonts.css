@@ -1,0 +1,46 @@
+/* Almarai */
+
+@font-face {
+  font-family: "Almarai";
+  src: url("../Assets/Fonts/Almarai/Almarai-Light.woff");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Almarai";
+  src: url("../Assets/Fonts/Almarai/Almarai-Regular.woff");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Almarai";
+  src: url("../Assets/Fonts/Almarai/Almarai-Bold.woff");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Almarai";
+  src: url("../Assets/Fonts/Almarai/Almarai-ExtraBold.woff");
+  font-weight: 800;
+}
+/***************************************************************/
+
+/* Livvic */
+
+@font-face {
+  font-family: "Livvic";
+  src: url("../Assets/Fonts/Livvic/Livvic-Light.woff");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Livvic";
+  src: url("../Assets/Fonts/Livvic/Livvic-Regular.woff");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Livvic";
+  src: url("../Assets/Fonts/Livvic/Livvic-Bold.woff");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Livvic";
+  src: url("../Assets/Fonts/Livvic/Livvic-Black.woff");
+  font-weight: 900;
+}

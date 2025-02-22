@@ -1,0 +1,221 @@
+.crops {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.card {
+  width: 302px;
+  height: fit-content;
+  padding: 16px;
+
+  border-radius: 16px;
+  border: 1px solid var(--border-color);
+  box-shadow: 2px 8px 20px #ddd;
+  transition: var(--main-transition);
+  user-select: none;
+}
+.card:hover {
+  border-color: var(--main-color);
+  box-shadow: none;
+  transform: translateY(10px);
+}
+
+.card .img-contain img {
+  max-width: 100%;
+  width: 240px;
+  height: 227px;
+  display: block;
+  margin: 0 auto;
+}
+
+.card .details {
+  margin-top: 10px;
+}
+
+.card .details .name {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  color: var(--second-color);
+}
+.card .details .price {
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 32px;
+  color: var(--main-color);
+}
+.card .details .price span {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+}
+.card .details .quanty .numbers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.card .numbers .addquanty {
+  width: 254px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card .numbers .addquanty button {
+  width: 25px;
+  /* height: 25px; */
+  font-size: 14px;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  background-color: var(--main-color);
+  transition: var(--main-transition);
+}
+.card .numbers .addquanty button:hover {
+  background-color: var(--hover-color);
+}
+.card .numbers .addquanty span {
+  width: 42px;
+
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+}
+.card .numbers .remove {
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: indianred;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  transition: var(--main-transition);
+}
+.card .numbers .remove:hover {
+  background-color: rgb(168, 60, 60);
+}
+.card .details .add {
+  width: 254px;
+  display: block;
+  margin: 0 auto;
+
+  outline: none;
+  border: none;
+  padding: 5px 16px;
+  border-radius: 8px;
+
+  background-color: var(--main-color);
+  color: white;
+  word-spacing: 2px;
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  transition: var(--main-transition);
+}
+.card .details .add:hover {
+  background-color: var(--hover-color);
+}
+.card .details .add i {
+  margin-right: 10px;
+}
+.dsabled {
+  cursor: no-drop;
+}
+
+/*************************************************************************/
+
+/* Media Query */
+/* Large */
+
+@media (max-width: 1200px) and (min-width: 1050px) {
+  .card {
+    width: 290px;
+  }
+
+  .card .details .add {
+    width: 242px;
+  }
+}
+
+@media (max-width: 1050px) and (min-width: 992px) {
+  .card {
+    width: 290px;
+  }
+  .card .img-contain img {
+    width: 220px;
+    height: 207px;
+  }
+  .card .details .add {
+    width: 242px;
+  }
+}
+
+@media (max-width: 992px) and (min-width: 767px) {
+  .card {
+    width: 270px;
+  }
+  .card .img-contain img {
+    width: 210px;
+    height: 197px;
+  }
+  .card .details .name {
+    font-size: 18px;
+  }
+  .card .details .price {
+    font-size: 20px;
+  }
+  .card .numbers .addquanty button {
+    width: 25px;
+  }
+  .card .details .add {
+    width: 222px;
+  }
+}
+/* Mobile */
+@media (max-width: 767px) and (min-width: 635px) {
+  .card {
+    width: 100%;
+  }
+  .card .img-contain img {
+    width: 250px;
+    height: 237px;
+  }
+
+  .card .details .add {
+    width: 100%;
+  }
+}
+
+@media (max-width: 635px) and (min-width: 516px) {
+  .card {
+    width: 350px;
+  }
+  .card .img-contain img {
+    width: 220px;
+    height: 206px;
+  }
+  .card .details .add {
+    width: 280px;
+  }
+}
+
+@media (max-width: 516px) {
+  .card {
+    width: 350px;
+  }
+  .card .img-contain img {
+    width: 220px;
+    height: 206px;
+  }
+  .card .details .add {
+    width: 280px;
+  }
+}

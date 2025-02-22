@@ -1,0 +1,35 @@
+/* Sc Section */
+.sf {
+  background-color: var(--ai-color);
+}
+.sf .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.sf .heading {
+  width: 721px;
+  height: 168px;
+}
+
+.sf .heading h1 {
+  font-family: Livvic;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 67.2px;
+  text-align: center;
+
+  color: var(--main-color);
+  position: relative;
+}
+.sf .heading h1 span {
+  color: #7dcd1a;
+}
+.sf .heading h1 img {
+  position: absolute;
+  top: -10px;
+  right: 30px;
+}
+/*******/

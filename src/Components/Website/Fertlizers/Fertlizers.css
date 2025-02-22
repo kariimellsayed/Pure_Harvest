@@ -1,0 +1,268 @@
+/* Upload */
+.ferlizers {
+  width: 800px;
+  height: 689px;
+  border-radius: 16px;
+  border: 1px solid #e9e9e9;
+  background-color: #ffffff;
+}
+.ferlizers .header {
+  width: 100%;
+  top: 0;
+  height: 80px;
+  padding: 12px 40px;
+  border-radius: 16px;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #e9e9e9;
+  display: flex;
+  align-items: center;
+}
+.ferlizers .header h3 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px;
+  text-align: center;
+  margin: 0 auto;
+  color: var(--second-color);
+  color: var(--second-color);
+}
+.ferlizers .header .link {
+  margin-top: 10px;
+  color: var(--second-color);
+  transition: var(--main-transition);
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 17.86px;
+  text-align: right;
+
+  color: var(--location-color);
+}
+.ferlizers .header .link i {
+  margin-right: 10px;
+}
+.ferlizers .header .link:hover {
+  color: var(--main-color);
+}
+.ferlizers .scan {
+  display: block;
+  margin: 20px auto 0;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  width: 720px;
+  height: 56px;
+  padding: 16px;
+  border-radius: 16px;
+  background-color: var(--main-color);
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  color: white;
+  transition: var(--main-transition);
+}
+
+.ferlizers .scan:hover {
+  background-color: rgb(19%, 39%, 19%);
+}
+
+/* Resultbody */
+.ferlizers .resultbody {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+.ferlizers .resultbody .img-contain img {
+  width: 720px;
+  height: 220px;
+  border-radius: 16px;
+  object-fit: cover;
+  border: 1px solid var(--border-color);
+}
+.ferlizers .resultbody .casediesase {
+  width: 720px;
+}
+.ferlizers .resultbody .casediesase h3 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.36px;
+  text-align: left;
+  color: var(--second-color);
+}
+
+.ferlizers .resultbody .casediesase h3 span {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.36px;
+  text-align: left;
+}
+.ferlizers h3 .dname {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.36px;
+  text-align: left;
+  color: var(--location-color);
+}
+.ferlizers .resultbody .casediesase .solution {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.36px;
+  text-align: left;
+  color: var(--main-color);
+}
+
+/* Media Query */
+@media (min-width: 768px) {
+}
+/* Large */
+@media (max-width: 1316px) and (min-width: 1250px) {
+}
+
+@media (max-width: 1249px) and (min-width: 1135px) {
+}
+@media (max-width: 1135px) and (min-width: 1050px) {
+}
+
+@media (max-width: 1050px) and (min-width: 992px) {
+}
+@media (max-width: 992px) and (min-width: 767px) {
+  .ferlizers {
+    width: 720px;
+    height: 689px;
+  }
+
+  .ferlizers .scan {
+    width: 640px;
+    height: 56px;
+  }
+  .ferlizers .resultbody .img-contain img {
+    width: 635px;
+  }
+  .ferlizers .resultbody .casediesase {
+    width: 635px;
+  }
+  .ferlizers .resultbody .casediesase h3 {
+    font-size: 14px;
+  }
+  .ferlizers .resultbody .casediesase p {
+    font-size: 14px;
+  }
+  .ferlizers .resultbody .casediesase h3 span {
+    font-size: 14px;
+  }
+  .ferlizers h3 .dname {
+    font-size: 14;
+  }
+  .ferlizers .resultbody .casediesase .solution {
+    font-size: 14px;
+  }
+}
+/* Mobile */
+@media (max-width: 767px) and (min-width: 635px) {
+  .ferlizers {
+    width: 600px;
+    height: 689px;
+  }
+
+  .ferlizers .scan {
+    width: 520px;
+    height: 56px;
+    font-size: 13px;
+  }
+  .ferlizers .resultbody .img-contain img {
+    width: 535px;
+  }
+  .ferlizers .resultbody .casediesase {
+    width: 535px;
+  }
+  .ferlizers .resultbody .casediesase h3 {
+    font-size: 13px;
+  }
+  .ferlizers .resultbody .casediesase p {
+    font-size: 13px;
+  }
+  .ferlizers .resultbody .casediesase h3 span {
+    font-size: 13px;
+  }
+  .ferlizers h3 .dname {
+    font-size: 13px;
+  }
+  .ferlizers .resultbody .casediesase .solution {
+    font-size: 13px;
+  }
+}
+@media (max-width: 635px) and (min-width: 516px) {
+  .ferlizers {
+    width: 465px;
+    height: 689px;
+  }
+
+  .ferlizers .scan {
+    width: 400px;
+    height: 56px;
+    font-size: 13px;
+  }
+  .ferlizers .resultbody .img-contain img {
+    width: 400px;
+  }
+  .ferlizers .resultbody .casediesase {
+    width: 400px;
+  }
+  .ferlizers .resultbody .casediesase h3 {
+    font-size: 12px;
+  }
+  .ferlizers .resultbody .casediesase p {
+    font-size: 13px;
+  }
+  .ferlizers .resultbody .casediesase h3 span {
+    font-size: 12px;
+  }
+  .ferlizers h3 .dname {
+    font-size: 12px;
+  }
+  .ferlizers .resultbody .casediesase .solution span {
+    font-size: 13px;
+  }
+}
+@media (max-width: 516px) {
+  .ferlizers {
+    width: 365px;
+    height: 745px;
+  }
+  .ferlizers .header h3 {
+    font-size: 15px;
+    margin: 10px auto;
+  }
+  .ferlizers .scan {
+    width: 300px;
+    height: 56px;
+    font-size: 13px;
+  }
+  .ferlizers .resultbody .img-contain img {
+    width: 300px;
+  }
+  .ferlizers .resultbody .casediesase {
+    width: 300px;
+  }
+  .ferlizers .resultbody .casediesase h3 {
+    font-size: 12px;
+  }
+  .ferlizers .resultbody .casediesase p {
+    font-size: 13px;
+  }
+  .ferlizers .resultbody .casediesase h3 span {
+    font-size: 12px;
+  }
+  .ferlizers h3 .dname {
+    font-size: 12px;
+  }
+  .ferlizers .resultbody .casediesase .solution,
+  .casediesase span {
+    font-size: 13px;
+  }
+}
+/***************************/

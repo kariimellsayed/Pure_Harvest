@@ -1,0 +1,29 @@
+.manage-links {
+  padding-top: 30px;
+  .crumb-link {
+    color: #6f7c84;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 13px;
+    text-align: right;
+    text-decoration: none;
+    transition: var(--main-transition);
+    &:not(:last-child) {
+      margin-right: 20px;
+      position: relative;
+      ::after {
+        font-family: "Font Awesome 6 Free";
+        content: "\2f";
+        position: absolute;
+        right: 0;
+      }
+    }
+    &:hover {
+      color: #283c47;
+      font-weight: 700;
+    }
+    &.active {
+      color: #283c47;
+    }
+  }
+}

@@ -1,0 +1,153 @@
+.check {
+  width: 416px;
+  height: fit-content;
+  padding-bottom: 10px;
+  border-radius: 16px;
+  border: 1px solid var(--border-color);
+}
+.check .header {
+  width: 100%;
+  height: 80px;
+  padding: 12px 24px;
+
+  border-radius: 16px 16px 0px 0px;
+  border-bottom: 1px solid var(--border-color);
+}
+.check .header h3 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  text-align: left;
+  margin-top: 10px;
+}
+.check .titles {
+  border-bottom: 1px solid var(--border-color);
+}
+.check .titles p {
+  display: flex;
+  justify-content: space-between;
+
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 18px;
+
+  color: #00000099;
+}
+.check .total {
+  margin-top: 20px;
+  border-bottom: 1px solid var(--border-color);
+}
+.check .total h2 {
+  display: flex;
+  justify-content: space-between;
+
+  color: var(--second-color);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 18px;
+  text-align: left;
+}
+.check .checkout {
+  margin-top: 20px;
+}
+.check .checkout .link {
+  width: 368px;
+  padding: 16px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 16px;
+  color: white;
+  background-color: var(--main-color);
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  transition: var(--main-transition);
+}
+
+.check .checkout .link:hover {
+  background-color: var(--hover-color);
+}
+
+/***************************************************************************/
+
+/* Media Query */
+
+/* Large */
+@media (max-width: 1316px) and (min-width: 1250px) {
+  .check {
+    width: 380px;
+  }
+  .check .checkout .link {
+    width: 332px;
+  }
+}
+
+@media (max-width: 1250px) and (min-width: 992px) {
+  .check {
+    width: 450px;
+  }
+  .check .checkout .link {
+    width: 380px;
+  }
+}
+
+@media (max-width: 992px) and (min-width: 776px) {
+  .check {
+    width: 500px;
+    margin-top: 10px;
+  }
+  .check .checkout .link {
+    width: 450px;
+  }
+}
+
+@media (max-width: 776px) and (min-width: 635px) {
+  .check {
+    width: 400px;
+    margin-top: 10px;
+  }
+  .check .checkout .link {
+    width: 350px;
+  }
+  .check .header h3 {
+    font-size: 20px;
+  }
+  .check .total h2 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 635px) and (min-width: 516px) {
+  .check {
+    width: 400px;
+    margin-top: 10px;
+  }
+  .check .checkout .link {
+    width: 350px;
+  }
+  .check .header h3 {
+    font-size: 20px;
+  }
+  .check .total h2 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 516px) {
+  .check {
+    width: 300px;
+    margin-top: 10px;
+  }
+  .check .checkout .link {
+    width: 250px;
+    font-size: 14px;
+  }
+  .check .header h3 {
+    font-size: 16px;
+  }
+  .check .total h2 {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,444 @@
+/* Start Achieve Section */
+.achieve .container {
+  display: flex;
+  justify-content: space-between;
+
+  /* flex-wrap: wrap; */
+}
+/* Box-1 */
+.achieve .container .box-1 {
+  width: 474px;
+  height: 473px;
+}
+.achieve .container .box-1 .group {
+  width: 424px;
+  height: 424px;
+  max-width: 100%;
+  background-color: var(--section-color);
+  border-radius: 16px;
+  position: relative;
+}
+.achieve .group .img-contain {
+  width: 424px;
+  height: 424px;
+
+  position: absolute;
+  left: 24px;
+  top: -24px;
+}
+.achieve .group .img-contain img {
+  width: 424px;
+  height: 424px;
+  border-radius: 16px;
+}
+.achieve .group .icon {
+  position: absolute;
+  background-color: #eaf2ea;
+  width: 394px;
+  height: 140px;
+  /* padding: 10px; */
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  bottom: -26px;
+  right: -50px;
+}
+
+.achieve .group .icon img {
+  width: 76px;
+  height: 70px;
+}
+.achieve .group .icon .line {
+  position: relative;
+  color: var(--main-color);
+}
+.achieve .group .icon .line h4 {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.achieve .group .icon .line p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.achieve .group .icon .line::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  background-color: var(--main-color);
+  left: -30px;
+}
+/* End Box-1 */
+/* Box-2 */
+.achieve .box-2 {
+  width: 716px;
+  height: 419px;
+  max-width: 100%;
+}
+.achieve .box-2 .heading {
+  width: 524px;
+  height: 106px;
+  max-width: 100%;
+}
+.achieve .box-2 .heading h3 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  color: var(--second-color);
+}
+.achieve .box-2 .heading h1 {
+  font-family: Livvic !important;
+  margin-top: 16px;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 0em;
+  color: var(--main-color);
+}
+.achieve .box-2 .titles {
+  margin-top: 20px;
+  width: 716px;
+  height: 136px;
+  color: var(--second-color);
+}
+.achieve .box-2 .titles h1 {
+  font-family: Livvic !important;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 35px;
+  letter-spacing: 0em;
+}
+.achieve .box-2 .titles p {
+  width: 716px;
+  height: 81px;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+}
+.achieve .box-2 .feature {
+  margin-top: 20px;
+}
+.achieve .box-2 .feature h5 {
+  width: 606px;
+  height: 27px;
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: 400;
+  padding-left: 35px;
+  color: var(--second-color);
+  margin-bottom: 16px;
+  position: relative;
+}
+.achieve .box-2 .feature h5:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f058";
+  position: absolute;
+  color: #7dcd1a;
+  font-size: 19px;
+  width: 24px;
+  height: 24px;
+  top: -1px;
+  left: 2px;
+}
+/* End Box-2 */
+
+/* End Achieve Section */
+/********************************************************/
+
+/* Media Query */
+@media (min-width: 768px) {
+}
+/* Large */
+@media (max-width: 1316px) and (min-width: 1250px) {
+  /* Box-1 */
+  .achieve .container .box-1 {
+    width: 424px;
+    height: 424px;
+  }
+  /* Box-2 */
+  .achieve .box-2 {
+    width: 560px;
+    height: 419px;
+  }
+  .achieve .box-2 .titles {
+    width: 640px;
+  }
+  .achieve .box-2 .titles p {
+    width: 530px;
+    height: 81px;
+    font-size: 15px;
+  }
+  .achieve .box-2 .feature h5 {
+    width: 600px;
+    height: 27px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1250px) and (min-width: 1135px) {
+  /* Box-1 */
+  .achieve .container .box-1 {
+    width: 400px;
+
+    height: 473px;
+  }
+  .achieve .container .box-1 .group {
+    width: 380px;
+    height: 380px;
+  }
+  .achieve .group .img-contain {
+    width: 380px;
+    height: 380px;
+  }
+  .achieve .group .img-contain img {
+    width: 380px;
+    height: 380px;
+    border-radius: 16px;
+  }
+  .achieve .group .icon {
+    width: 360px;
+    height: 110px;
+  }
+
+  .achieve .group .icon img {
+    width: 70px;
+    height: 64px;
+  }
+
+  .achieve .group .icon .line h4 {
+    font-size: 40px;
+  }
+  .achieve .group .icon .line p {
+    font-size: 16px;
+  }
+  .achieve .group .icon .line::before {
+    width: 1px;
+  }
+  /* Box-2 */
+  .achieve .box-2 {
+    width: 480px;
+
+    height: 419px;
+  }
+  .achieve .box-2 .heading h1 {
+    font-size: 40px;
+  }
+  .achieve .box-2 .titles h1 {
+    font-size: 26px;
+  }
+  .achieve .box-2 .titles {
+    width: 520px;
+  }
+  .achieve .box-2 .titles p {
+    width: 515px;
+    height: 81px;
+    font-size: 14px;
+  }
+
+  .achieve .box-2 .feature h5 {
+    width: 560px;
+
+    height: 27px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 1135px) and (min-width: 1050px) {
+  /* Box-1 */
+  .achieve .container .box-1 {
+    display: none;
+  }
+}
+
+@media (max-width: 1050px) and (min-width: 992px) {
+  /* Box-1 */
+  .achieve .container .box-1 {
+    display: none;
+  }
+}
+@media (max-width: 992px) and (min-width: 767px) {
+  /* Box-1 */
+  .achieve .container .box-1 {
+    display: none;
+  }
+  /* Box-2 */
+  .achieve .box-2 .titles {
+    width: 640px;
+  }
+  .achieve .box-2 .titles p {
+    width: 510px;
+
+    height: 81px;
+    font-size: 16px;
+  }
+  .achieve .box-2 .feature h5 {
+    width: 600px;
+    font-size: 18px;
+  }
+}
+/* Mobile */
+@media (max-width: 767px) and (min-width: 640px) {
+  /* Box-1 */
+  .achieve .container .box-1 {
+    display: none;
+  }
+  /* Box-2 */
+  .achieve .box-2 .heading h3 {
+    font-size: 16px;
+  }
+  .achieve .box-2 .heading h1 {
+    font-size: 30px;
+  }
+  .achieve .box-2 .titles {
+    width: 525px;
+  }
+  .achieve .box-2 .titles h1 {
+    font-size: 22px;
+  }
+  .achieve .box-2 .titles p {
+    width: 480px;
+    font-size: 14px;
+  }
+
+  .achieve .box-2 .feature h5 {
+    width: 520px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 640px) and (min-width: 516px) {
+  /* Box-1 */
+  .achieve .container .box-1 {
+    display: none;
+  }
+  /* Box-2 */
+  .achieve .box-2 .heading h3 {
+    font-size: 16px;
+  }
+  .achieve .box-2 .heading h1 {
+    font-size: 30px;
+  }
+  .achieve .box-2 .titles {
+    width: 370px;
+  }
+  .achieve .box-2 .titles h1 {
+    font-size: 22px;
+  }
+  .achieve .box-2 .titles p {
+    width: 360px;
+
+    font-size: 12px;
+  }
+  .achieve .box-2 .feature {
+    margin-top: 85px;
+  }
+  .achieve .box-2 .feature h5 {
+    width: 380px;
+    font-size: 12px;
+  }
+}
+
+/* Main Mobile */
+@media (max-width: 516px) and (min-width: 400px) {
+  /* Box-2 */
+  .achieve .box-2 {
+    padding-left: 20px;
+  }
+  .achieve .box-2 .titles {
+    width: 270px;
+  }
+  .achieve .box-2 .heading h3 {
+    font-size: 14px;
+  }
+  .achieve .box-2 .heading {
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .achieve .box-2 .heading h1 {
+    margin-top: 16px;
+    font-size: 25px;
+  }
+
+  .achieve .box-2 .titles h1 {
+    font-size: 15px;
+  }
+  .achieve .box-2 .titles p {
+    width: 244px;
+
+    font-size: 10px;
+  }
+  .achieve .box-2 .feature {
+    margin-top: 50px;
+  }
+  .achieve .box-2 .feature h5 {
+    width: 300px;
+    font-size: 9px;
+    padding-left: 22px;
+    margin-bottom: 2px;
+  }
+  .achieve .box-2 .feature h5:before {
+    font-size: 11px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 400px) and (min-width: 350px) {
+  /* Box-2 */
+  .achieve .box-2 {
+    padding-left: 20px;
+  }
+  .achieve .box-2 .titles {
+    width: 270px;
+  }
+  .achieve .box-2 .heading h3 {
+    font-size: 14px;
+  }
+  .achieve .box-2 .heading {
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .achieve .box-2 .heading h1 {
+    margin-top: 16px;
+    font-size: 25px;
+  }
+
+  .achieve .box-2 .titles h1 {
+    font-size: 15px;
+  }
+  .achieve .box-2 .titles p {
+    width: 244px;
+
+    font-size: 10px;
+  }
+  .achieve .box-2 .feature {
+    margin-top: 50px;
+  }
+  .achieve .box-2 .feature h5 {
+    width: 300px;
+    font-size: 9px;
+    padding-left: 22px;
+    margin-bottom: 2px;
+  }
+  .achieve .box-2 .feature h5:before {
+    font-size: 11px;
+  }
+}
+/***************************/
+/* Total */
+@media (max-width: 516px) {
+  /* Box-1 */
+  .achieve .container .box-1 {
+    display: none;
+  }
+}
+/***********************************************/

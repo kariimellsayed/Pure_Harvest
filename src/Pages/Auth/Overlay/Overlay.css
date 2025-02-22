@@ -1,0 +1,136 @@
+/***************************************************/
+/* Overlay */
+.overlay {
+  background: url("../../../Css/Assets/Images/Register/Overlay.webp") center /
+    cover no-repeat;
+  position: relative;
+  width: 720px;
+  height: 1024px;
+  z-index: 3;
+}
+
+.overlay::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(49, 125, 49, 0.1);
+  z-index: -1;
+}
+
+.overlay .titles {
+  text-align: center;
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translateY(120%);
+}
+.overlay .titles h1 {
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 48px;
+  text-align: center;
+  color: var(--main-color);
+  /* width: 384px; */
+}
+.overlay .titles h1 span {
+  color: #7dcd1a;
+  position: relative;
+  margin-left: 10px;
+}
+.overlay .titles h1 span img {
+  position: absolute;
+  top: -5px;
+  right: -20px;
+  filter: invert(41%) sepia(62%) saturate(481%) hue-rotate(71deg)
+    brightness(86%) contrast(91%);
+}
+.overlay .titles p {
+  color: var(--main-color);
+  width: 571px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  margin: 0;
+}
+/***************************************************/
+/* Media Query */
+@media (min-width: 768px) {
+}
+/* Large */
+@media (max-width: 1316px) and (min-width: 1250px) {
+  /* Overlay*/
+
+  .overlay {
+    width: 670px;
+  }
+  .overlay .titles h2 {
+    font-size: 25px;
+  }
+  .overlay .titles p {
+    font-size: 20px;
+    width: 480px;
+  }
+}
+
+@media (max-width: 1249px) and (min-width: 1135px) {
+  /* Overlay*/
+
+  .overlay {
+    width: 600px;
+  }
+  .overlay .titles h2 {
+    font-size: 25px;
+  }
+  .overlay .titles p {
+    font-size: 22px;
+    width: 520px;
+  }
+}
+
+@media (max-width: 1134px) and (min-width: 1050px) {
+  /* Overlay*/
+
+  .overlay {
+    width: 550px;
+  }
+  .overlay .titles h2 {
+    font-size: 22px;
+  }
+  .overlay .titles p {
+    font-size: 15px;
+    width: 435px;
+  }
+}
+
+@media (max-width: 1149px) and (min-width: 992px) {
+  /* Overlay*/
+
+  .overlay {
+    width: 520px;
+  }
+  .overlay .titles h2 {
+    font-size: 22px;
+  }
+  .overlay .titles p {
+    font-size: 17px;
+    width: 410px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+}
+@media (max-width: 516px) {
+}
+/***************************/
+
+@media (max-width: 991px) {
+  /* Form Page */
+  .overlay {
+    display: none;
+  }
+}

@@ -1,0 +1,183 @@
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.popup .popup-inner {
+  width: 700px;
+  height: 456px;
+  border-radius: 24px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.popup .popup-inner .img-contain img {
+  width: 155px;
+  height: 155px;
+}
+.popup .popup-inner h2 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: center;
+  color: var(--seconde-color);
+}
+.popup .popup-inner .wrong {
+  color: rgb(212, 84, 84);
+  font-weight: 900;
+}
+
+.popup .popup-inner button {
+  width: 501px;
+  padding: 16px;
+  border-radius: 16px;
+
+  outline: none;
+  border: none;
+  background-color: var(--main-color);
+  color: white;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+}
+
+.popup .popup-inner .close {
+  background-color: rgba(250, 84, 84, 1);
+  transition: 0.3s;
+}
+.popup .popup-inner .close:hover {
+  background-color: rgba(200, 84, 84, 1);
+}
+
+.popup .popup-inner .ok {
+  transition: 0.3s;
+}
+.popup .popup-inner .ok:hover {
+  background-color: var(--hover-color);
+}
+/********************************************************/
+/* Medai Query */
+@media (max-width: 1250px) and (min-width: 1135px) {
+  .popup .popup-inner {
+    width: 660px;
+    height: 420px;
+  }
+  .popup .popup-inner .img-contain img {
+    width: 145px;
+    height: 145px;
+  }
+  .popup .popup-inner h2 {
+    font-size: 27px;
+  }
+
+  .popup .popup-inner button {
+    width: 475px;
+  }
+}
+
+@media (max-width: 1135px) and (min-width: 1050px) {
+  .popup .popup-inner {
+    width: 600px;
+    height: 400px;
+  }
+  .popup .popup-inner .img-contain img {
+    width: 135px;
+    height: 135px;
+  }
+  .popup .popup-inner h2 {
+    font-size: 27px;
+  }
+
+  .popup .popup-inner button {
+    width: 475px;
+  }
+}
+@media (max-width: 1050px) and (min-width: 992px) {
+  .popup .popup-inner {
+    width: 540px;
+    height: 370px;
+  }
+  .popup .popup-inner .img-contain img {
+    width: 115px;
+    height: 115px;
+  }
+  .popup .popup-inner h2 {
+    font-size: 24px;
+  }
+
+  .popup .popup-inner button {
+    width: 400px;
+  }
+}
+
+@media (max-width: 992px) {
+  .popup .popup-inner {
+    width: 500px;
+    height: 335px;
+  }
+  .popup .popup-inner .img-contain img {
+    width: 100px;
+    height: 100px;
+  }
+  .popup .popup-inner h2 {
+    font-size: 20px;
+  }
+
+  .popup .popup-inner button {
+    width: 350px;
+  }
+}
+
+@media (max-width: 550px) {
+  .popup .popup-inner {
+    width: 400px;
+    height: 330px;
+  }
+  .popup .popup-inner .img-contain img {
+    width: 90px;
+    height: 90px;
+  }
+  .popup .popup-inner h2 {
+    font-size: 18px;
+  }
+
+  .popup .popup-inner button {
+    width: 300px;
+  }
+  .popup .popup-inner .wrong {
+    color: rgb(212, 84, 84);
+    font-weight: 900;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 430px) {
+  .popup .popup-inner {
+    width: 350px;
+    height: 300px;
+  }
+  .popup .popup-inner .img-contain img {
+    width: 70px;
+    height: 70px;
+  }
+  .popup .popup-inner h2 {
+    font-size: 18px;
+  }
+
+  .popup .popup-inner button {
+    width: 300px;
+  }
+}
