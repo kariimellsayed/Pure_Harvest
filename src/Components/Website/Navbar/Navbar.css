@@ -193,6 +193,12 @@
   .nav .systems .icons i {
     font-size: 15px;
   }
+  .nav .systems .img-contain img {
+    display: none;
+  }
+  .nav .systems .img-contain span {
+    font-size: 10px;
+  }
 }
 @media (max-width: 450px) {
   .nav .systems {

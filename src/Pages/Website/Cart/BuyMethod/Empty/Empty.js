@@ -11,7 +11,7 @@ export default function Empty() {
           <div className="img-contain">
             <img src={eimage} alt="Empty" loading="lazy" />
           </div>
-          <h1>Your Cart is Empty&#128577;</h1>
+          <h1>Your Cart is Empty</h1>
         </div>
       </Container>
     </section>
